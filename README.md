@@ -1,69 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Cool Modal
 
-## Available Scripts
+### Description
 
-In the project directory, you can run:
+Web app developed in React that recieves an ID from the user, makes a call to an api and lets you edit the contents of the response. When the data is saved it displays it in the main site succesfully edited.
+
+The Modal used to edit the information was designed from scratch using only HTML and CSS, it can be modified with the given props explained below.
+
+
+### `npm install`
+
+Installs npm modules to be used by the app.
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode.</br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Modal Props
+---
 
-### `npm test`
+| Props                   | Type    | Default                 | Description                                                             |
+| ----------------------- | ------- | ----------------------- | ----------------------------------------------------------------------- |
+| open                    | bool  	|                         | If `true` modal is open.  (**required**)                                |
+| onCancel                | func()  |                         | Callback fired when cancel button is clicked.                           |
+| onOk                    | func()  |                         | Callback fired when ok button is clicked.                               |
+| close                   | func() 	|                         | Callback fired when the component requests to be closed. (**required**) |
+| children                | element |                         | A single child content element.                                         |
+| customHeaderStyle       | string  | 'modal-header-default'  | Classname used for header style.                                        |
+| customHeaderTitle       | string  | 'Editing: '             | Text used for header title.                                             |
+| customHeaderTitleStyle  | string  | 'header-title-default'  | Classname used for header style.                                        |
+| customOkButton          | string  | 'btn-confirm'           | Classname used for ok button style.                                     |
+| customCancelButton      | string  | 'btn-cancel'            | Classname used for cancel button style.                                 |
+| customOkButtonTitle     | string	| 'Save'                  | Text used for ok button.                                                |
+| customCancelButtonTitle | string	| 'Cancel'                | Text used for cancel button.                                            |
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# cool-modal
